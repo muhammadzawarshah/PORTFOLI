@@ -1,0 +1,688 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+
+}
+
+:root{
+
+    --green: rgb(0, 214, 54);
+    --dark-blue: rgba(0, 0, 19, 0.712);
+
+}
+
+body{
+
+    background: black;
+    color: white;
+
+}
+
+.header{
+
+    color: white;
+
+}
+
+.header .nav {
+
+    display: flex;
+    justify-content: space-between;
+    margin: 17px 20px;
+
+}
+
+.header .nav .logo{
+
+    font-family: roboto;
+
+}
+
+.header .nav .logo h1 span{
+
+    color: var(--green);
+
+}
+
+.header .nav .ul{
+
+    display: flex;
+
+}
+
+.header .nav .ul li{
+
+    list-style: none;
+    margin-left: 40px;
+
+}
+
+.header .nav .ul li a{
+
+    text-decoration: none;
+    color: white;
+    font-family: roboto;
+    position: relative;
+
+}
+
+.header .nav .ul li a::after{
+
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background: var(--green);
+    left: 0;
+    bottom: -3px;
+    box-shadow: 0px 3px 15px 1px var(--green);
+    transition: 0.5s;
+
+}
+
+.header .nav .ul li a:hover::after{
+
+    cursor: pointer;
+    width: 100%;
+
+}
+
+.header .nav .social a{
+
+    text-decoration: none;
+    color: var(--green);
+    margin-right: 20px;
+    font-size: 20px;
+
+}
+
+.header .nav .social a i{
+
+    transition: all ease 0.5s;
+
+}
+
+.header .nav .social a i:hover{
+
+    cursor: pointer;
+    color: white;
+
+}
+
+
+.main{
+
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.main .left{
+
+    width: 40%;
+    color: white;
+    font-family: roboto;
+    margin-top: 150px;
+
+}
+
+.main .left h1{
+
+    font-size: 4em;
+
+}
+
+.main .left h2{
+
+    color: var(--green);
+    font-family: roboto thin;
+    margin-top: 10px;
+    font-size: 2em;
+
+}
+
+.main .left p{
+
+    margin-top: 10px;
+
+}
+
+.main .left button{
+
+    margin-top: 20px;
+    background: var(--green);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0);
+    transition: 0.5s;
+
+}
+
+.main .left button:hover{
+
+    cursor: pointer;
+    border: 2px solid var(--green);
+    /* color: var(--green); */
+    background: transparent;
+
+}
+
+.main .right{
+
+    width: 25%;
+
+}
+
+.main .right img{
+   
+     margin-top: 50px;
+    width: 100%;
+
+}
+
+
+.about{
+
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    background: var(--dark-blue);
+    padding: 50px 0px;
+
+}
+
+.about .left{
+
+    width: 40%;
+
+}
+
+.about .left img{
+
+    width: 80%;
+
+}
+
+.about .right{
+
+    width: 40%;
+    color: white;
+    margin-top: 50px;
+
+}
+
+.about .right h1{
+
+    font-family: roboto;
+
+}
+
+.about .right h1 span{
+
+    color: var(--green)
+
+}
+
+.about .right p{
+
+    font-family: roboto;
+    margin-top: 20px;
+
+}
+
+.about .right button{
+
+    margin-top: 20px;
+    background: var(--green);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0);
+    transition: 0.5s;
+
+}
+
+.about .right button:hover{
+
+    cursor: pointer;
+    border: 2px solid var(--green);
+    /* color: var(--green); */
+    background: transparent;
+
+}
+
+.myskill{
+
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+.myskill>h1{
+
+    font-family: roboto;
+
+}
+
+.myskill>h1 span{
+
+    color: var(--green);
+
+}
+
+.myskill p{
+
+    font-family: roboto;
+
+}
+
+.myskill .skills{
+
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.myskill .left{
+
+    text-align: left;
+    width: 40%;
+    padding: 50px 50px;
+
+}
+
+.myskill .left .HTML, .Js, .Bs{
+
+    margin-top: 20px;
+
+}
+
+/* Html Skill */
+
+.myskill .left .HTML>h3{
+
+    font-family: roboto;
+    font-weight: 400;
+
+}
+
+.myskill .left .HTML .line{
+
+    background: white;
+    height: 6px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.myskill .left .HTML>.line .line-col{
+
+    background-color: var(--green);
+    width: 95%;
+    height: 100%;
+
+}
+
+.myskill .left .HTML .perc{
+
+    color: var(--green);
+    text-align: right;
+    position: relative;
+    right: 10px;
+    bottom: 30px;
+
+}
+
+
+/* js skilld */
+
+.myskill .left .Js>h3{
+
+    font-family: roboto;
+    font-weight: 400;
+
+}
+
+.myskill .left .Js .line{
+
+    background: white;
+    height: 6px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.myskill .left .Js>.line .line-col{
+
+    background-color: var(--green);
+    width: 80%;
+    height: 100%;
+
+}
+
+.myskill .left .Js .perc{
+
+    color: var(--green);
+    text-align: right;
+    position: relative;
+    right: 90px;
+    bottom: 30px;
+
+}
+
+/* boot strap skill */
+
+.myskill .left .Bs>h3{
+
+    font-family: roboto;
+    font-weight: 400;
+
+}
+
+.myskill .left .Bs .line{
+
+    background: white;
+    height: 6px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.myskill .left .Bs>.line .line-col{
+
+    background-color: var(--green);
+    width: 90%;
+    height: 100%;
+
+}
+
+.myskill .left .Bs .perc{
+
+    color: var(--green);
+    text-align: right;
+    position: relative;
+    right: 35px;
+    bottom: 30px;
+
+}
+
+/* right side of the dkills */
+
+.myskill .right{
+
+    text-align: left;
+    width: 40%;
+    padding: 50px 50px;
+
+}
+
+.myskill .right .CSS, .React, .Git{
+
+    margin-top: 20px;
+
+}
+
+/* CSS Skills */
+
+.myskill .right .CSS>h3{
+
+    font-family: roboto;
+    font-weight: 400;
+
+}
+
+.myskill .right .CSS .line{
+
+    background: white;
+    height: 6px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.myskill .right .CSS>.line .line-col{
+
+    background-color: var(--green);
+    width: 95%;
+    height: 100%;
+
+}
+
+.myskill .right .CSS .perc{
+
+    color: var(--green);
+    text-align: right;
+    position: relative;
+    right: 10px;
+    bottom: 30px;
+
+}
+
+/* React skills */
+
+.myskill .right .React>h3{
+
+    font-family: roboto;
+    font-weight: 400;
+
+}
+
+.myskill .right .React .line{
+
+    background: white;
+    height: 6px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.myskill .right .React>.line .line-col{
+
+    background-color: var(--green);
+    width: 70%;
+    height: 100%;
+
+}
+
+.myskill .right .React .perc{
+
+    color: var(--green);
+    text-align: right;
+    position: relative;
+    right: 145px;
+    bottom: 30px;
+
+}
+
+/* Git & GitHub  Skills */
+
+.myskill .right .Git>h3{
+
+    font-family: roboto;
+    font-weight: 400;
+
+}
+
+.myskill .right .Git .line{
+
+    background: white;
+    height: 6px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.myskill .right .Git>.line .line-col{
+
+    background-color: var(--green);
+    width: 80%;
+    height: 100%;
+
+}
+
+.myskill .right .Git .perc{
+
+    color: var(--green);
+    text-align: right;
+    position: relative;
+    right: 90px;
+    bottom: 30px;
+
+}
+
+/* projects section  */
+
+.projects{
+
+    text-align: center;
+    background: var(--dark-blue);
+    padding: 50px 0px;
+    font-family: roboto;
+
+}
+
+.projects>h1 span{
+
+    color: var(--green);
+
+}
+
+.projects>p{
+
+    margin-top: 10px;
+
+}
+
+.projects .images{
+
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0px;
+
+}
+
+.projects .images .img{
+
+    width: 20%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.322);
+    backdrop-filter: blur(1px);
+    border-radius: 10px;
+
+}
+.projects .images .img:hover{
+
+    cursor: pointer;
+
+}
+
+.projects .images .img img{
+
+    width: 100%;
+
+}
+
+.projects .images .img img{
+
+    cursor: pointer;
+
+}
+
+.contect{
+
+    text-align: center;
+    padding: 100px 0px;
+    font-family: roboto;
+
+}
+
+.contect>h1 span{
+
+    color: var(--green);
+
+}
+
+.contect .cont{
+
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0px;
+
+}
+
+.contect .cont .left{
+
+    width: 20%;
+    display: grid;
+    text-align: left;
+    font-family: roboto;
+
+}
+
+.contect .cont .left a{
+
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
+    font-family: roboto;
+
+}
+
+.contect .cont .left a i{
+
+    padding: 5px;
+    background: var(--green);
+    margin-right: 5px;
+
+}
+
+
+.contect .cont .right{
+
+    width: 60%;
+
+}
+
+.contect .cont .right{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;padding: 20px;
+    gap: 30px;
+
+}
+
+.contect .cont .right input{
+
+    height: 30px;
+    padding: 5px 20px;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    border: 2px solid #5e5e5e60;
+
+}
+
+.contect .cont .right textarea{
+
+    
+    width: 197%;
+    height: 200px;
+    padding: 5px 20px;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    border: 2px solid #5e5e5e60;
+    font-family: roboto;
+
+}
